@@ -25,6 +25,7 @@ body{
     border: 1px solid gray;
     font-family: 'Courier New', Courier, monospace;
     outline: none;
+    padding-left: 10px;
 }
 
 .pass{
@@ -34,6 +35,7 @@ body{
     border: 1px solid gray;
     font-family: 'Courier New', Courier, monospace;
     outline: none;
+    padding-left: 10px;
 }
 
 .btn{

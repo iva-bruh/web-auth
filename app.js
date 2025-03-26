@@ -6,7 +6,7 @@ import jwt from 'jsonwebtoken';
 import cookieParser from 'cookie-parser';
 
 const app = express();
-const PORT = 5500;
+const PORT = 80;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -47,6 +47,12 @@ app.post('/login', (req, res) => {
 app.post("/logout", (req, res) => {
     res.clearCookie('token');
     res.redirect("/");
+});
+
+app.get("/telegram", (req, res) => {
+    const tg_data = req.query
+    console.log(tg_data);
+    res.status(200).send("Успешно!");
 });
 
 app.get("/protected", (req, res) => {

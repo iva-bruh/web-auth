@@ -10,25 +10,22 @@ body{
 .auth{
     width: 500px;
     background: white;
+    padding: 30px 0;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    border-radius: 15px;
+    margin-top: 20px;
 }
 
-.log{
-    width: 400px;
-    height: 50px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    font-family: 'Courier New', Courier, monospace;
-    outline: none;
-    padding-left: 10px;
-}
-
-.pass{
+.log-pass{
     width: 400px;
     height: 50px;
     border-radius: 10px;
@@ -49,6 +46,21 @@ body{
 }
 .btn:hover{
     background: #6dbe5a;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.btn1{
+    width: 140px;
+    padding: 13px 0;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    background: #da6f6f;
+}
+.btn1:hover{
+    background: #b24e4e;
     cursor: pointer;
     transition: 0.7s;
 }

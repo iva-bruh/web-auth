@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Auth</title>
+</head>
+
+<body>
+    <div class="auth">
+        <span style="font-family: 'Courier New', Courier, monospace; font-size: 25px;">Авторизация</span>
+        <form class="form" action="/login" method="POST">
+            <input class="log-pass" name="login" type="text" placeholder="Логин" required>
+            <input class="log-pass" name="password" type="password" placeholder="Пароль" required> 
+            <button type="submit" class="btn">Войти</button>
+        </form>
+    </div>
+</body>
